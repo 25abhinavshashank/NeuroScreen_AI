@@ -1,0 +1,40 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      NEUROSCREEN_ENV: production
+      NEUROSCREEN_DATABASE_URL: sqlite:////app/data/neuroscreen.db
+      NEUROSCREEN_ALLOWED_ORIGINS: http://localhost:5173,http://localhost:8080
+      NEUROSCREEN_OLLAMA_HOST: http://ollama:11434
+    volumes:
+      - neuroscreen-data:/app/data
+    depends_on:
+      - ollama
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+  # Optional: local LLM/embedding server for RAG retrieval and
+  # explanation generation. Pull the required models once it's up:
+  #   docker compose exec ollama ollama pull nomic-embed-text
+  #   docker compose exec ollama ollama pull gemma2:2b
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+
+volumes:
+  neuroscreen-data:
+  ollama-data:

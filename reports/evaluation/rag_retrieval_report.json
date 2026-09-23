@@ -1,0 +1,137 @@
+{
+  "queries": 4,
+  "k": 5,
+  "recall_at_k": 1.0,
+  "precision_at_k": 0.2,
+  "mrr": 0.8333333333333334,
+  "results": [
+    {
+      "k": 5,
+      "retrieved_count": 5,
+      "retrieved_chunks": [
+        "chunk_28",
+        "chunk_79",
+        "chunk_27",
+        "chunk_8",
+        "chunk_7"
+      ],
+      "retrieved_sources": [
+        "knowledge_base\\guidelines\\CDC_clinical_screening.pdf",
+        "knowledge_base\\sources\\CDC_developmental_monitoring.pdf",
+        "knowledge_base\\guidelines\\CDC_clinical_screening.pdf",
+        "knowledge_base\\guidelines\\CDC_autism_screening.pdf",
+        "knowledge_base\\guidelines\\CDC_autism_screening.pdf"
+      ],
+      "relevant_chunks": [
+        "chunk_28"
+      ],
+      "relevant_sources": [
+        "CDC_clinical_screening.pdf"
+      ],
+      "chunk_hits": [
+        "chunk_28"
+      ],
+      "source_hits": [],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "reciprocal_rank": 1.0,
+      "query": "Do developmental screening tools provide a diagnosis?"
+    },
+    {
+      "k": 5,
+      "retrieved_count": 5,
+      "retrieved_chunks": [
+        "chunk_79",
+        "chunk_80",
+        "chunk_28",
+        "chunk_14",
+        "chunk_27"
+      ],
+      "retrieved_sources": [
+        "knowledge_base\\sources\\CDC_developmental_monitoring.pdf",
+        "knowledge_base\\sources\\CDC_developmental_monitoring.pdf",
+        "knowledge_base\\guidelines\\CDC_clinical_screening.pdf",
+        "knowledge_base\\guidelines\\CDC_clinical_screening.pdf",
+        "knowledge_base\\guidelines\\CDC_clinical_screening.pdf"
+      ],
+      "relevant_chunks": [
+        "chunk_79"
+      ],
+      "relevant_sources": [
+        "CDC_developmental_monitoring.pdf"
+      ],
+      "chunk_hits": [
+        "chunk_79"
+      ],
+      "source_hits": [],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "reciprocal_rank": 1.0,
+      "query": "What is developmental screening?"
+    },
+    {
+      "k": 5,
+      "retrieved_count": 5,
+      "retrieved_chunks": [
+        "chunk_77",
+        "chunk_83",
+        "chunk_86",
+        "chunk_80",
+        "chunk_79"
+      ],
+      "retrieved_sources": [
+        "knowledge_base\\sources\\CDC_developmental_monitoring.pdf",
+        "knowledge_base\\sources\\CDC_developmental_monitoring.pdf",
+        "knowledge_base\\sources\\CDC_developmental_monitoring.pdf",
+        "knowledge_base\\sources\\CDC_developmental_monitoring.pdf",
+        "knowledge_base\\sources\\CDC_developmental_monitoring.pdf"
+      ],
+      "relevant_chunks": [
+        "chunk_86"
+      ],
+      "relevant_sources": [
+        "CDC_developmental_monitoring.pdf"
+      ],
+      "chunk_hits": [
+        "chunk_86"
+      ],
+      "source_hits": [],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "reciprocal_rank": 0.3333333333333333,
+      "query": "Why are developmental monitoring and screening important?"
+    },
+    {
+      "k": 5,
+      "retrieved_count": 5,
+      "retrieved_chunks": [
+        "chunk_25",
+        "chunk_79",
+        "chunk_3",
+        "chunk_27",
+        "chunk_14"
+      ],
+      "retrieved_sources": [
+        "knowledge_base\\guidelines\\CDC_clinical_screening.pdf",
+        "knowledge_base\\sources\\CDC_developmental_monitoring.pdf",
+        "knowledge_base\\guidelines\\CDC_autism_screening.pdf",
+        "knowledge_base\\guidelines\\CDC_clinical_screening.pdf",
+        "knowledge_base\\guidelines\\CDC_clinical_screening.pdf"
+      ],
+      "relevant_chunks": [
+        "chunk_25"
+      ],
+      "relevant_sources": [
+        "CDC_clinical_screening.pdf"
+      ],
+      "chunk_hits": [
+        "chunk_25"
+      ],
+      "source_hits": [],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "reciprocal_rank": 1.0,
+      "query": "How can parents contribute to developmental screening?"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.venv/
+.venv_broken_py312/
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+data/processed/
+data/interim/
+data/raw/autism_video/
+*.db
+reports/
+.env
+models/artifacts/*_resume.pt

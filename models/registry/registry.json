@@ -1,0 +1,27 @@
+{
+  "active_models": {
+    "child": {
+      "name": "neuro_screen_logistic_regression",
+      "version": "v2.0.0",
+      "status": "DEMO_ACTIVE",
+      "artifact": "models/artifacts/neuro_screen_logistic_regression_v2.0.0.joblib",
+      "metadata": "models/metadata/neuro_screen_logistic_regression_v2.0.0.json",
+      "age_range_years": [
+        4.0,
+        11.0
+      ]
+    },
+    "toddler": {
+      "name": "neuro_screen_logistic_regression_toddler",
+      "version": "v1.0.0",
+      "status": "DEMO_ACTIVE",
+      "artifact": "models/artifacts/neuro_screen_logistic_regression_toddler_v1.0.0.joblib",
+      "metadata": "models/metadata/neuro_screen_logistic_regression_toddler_v1.0.0.json",
+      "age_range_years": [
+        1.0,
+        3.0
+      ]
+    }
+  },
+  "updated_at": "2026-09-17T07:24:31.065234+00:00"
+}

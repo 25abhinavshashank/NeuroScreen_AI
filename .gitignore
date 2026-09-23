@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.venv_broken_py312/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Data / models (large or generated artifacts)
+data/processed/
+data/interim/
+data/splits/
+data/raw/autism_video/
+models/artifacts/*.joblib
+models/artifacts/*.pt
+backend/app/video/models/*.task
+*.db
+*.sqlite3
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Reports / logs
+reports/**/*.log
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/

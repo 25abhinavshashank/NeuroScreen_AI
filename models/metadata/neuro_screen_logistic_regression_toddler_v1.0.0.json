@@ -1,0 +1,199 @@
+{
+  "model_name": "neuro_screen_logistic_regression_toddler",
+  "model_version": "v1.0.0",
+  "status": "DEMO_ACTIVE",
+  "algorithm": "LogisticRegression",
+  "feature_names": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A10",
+    "Age_Mons",
+    "Sex",
+    "Ethnicity",
+    "Jaundice",
+    "Family_mem_with_ASD",
+    "Who completed the test"
+  ],
+  "numeric_features": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A10",
+    "Age_Mons"
+  ],
+  "categorical_features": [
+    "Sex",
+    "Ethnicity",
+    "Jaundice",
+    "Family_mem_with_ASD",
+    "Who completed the test"
+  ],
+  "target_column": "Class/ASD Traits ",
+  "excluded_features": [
+    "Case_No",
+    "Qchat-10-Score"
+  ],
+  "age_range_years": [
+    1.0,
+    3.0
+  ],
+  "training_samples": 1054,
+  "holdout_samples": 211,
+  "cv_folds": 5,
+  "test_size": 0.2,
+  "random_state": 42,
+  "cross_validation": {
+    "accuracy": {
+      "mean": 1.0,
+      "std": 0.0,
+      "folds": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "balanced_accuracy": {
+      "mean": 1.0,
+      "std": 0.0,
+      "folds": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "precision": {
+      "mean": 1.0,
+      "std": 0.0,
+      "folds": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "recall": {
+      "mean": 1.0,
+      "std": 0.0,
+      "folds": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "f1": {
+      "mean": 1.0,
+      "std": 0.0,
+      "folds": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "roc_auc": {
+      "mean": 1.0,
+      "std": 0.0,
+      "folds": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "pr_auc": {
+      "mean": 1.0,
+      "std": 1.4043333874306804e-16,
+      "folds": [
+        1.0,
+        1.0000000000000002,
+        1.0000000000000002,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "holdout": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision": 1.0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "f1": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "brier_score": 0.003294519476640745,
+    "log_loss": 0.02571458022066984,
+    "confusion_matrix": [
+      [
+        65,
+        0
+      ],
+      [
+        0,
+        146
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 65.0
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 146.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 211.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 211.0
+      }
+    }
+  },
+  "label_reconstruction_audit": {
+    "note": "Dataset-label reconstruction audit; not a clinical rule.",
+    "best_threshold": {
+      "threshold": 3,
+      "accuracy": 1.0,
+      "errors": 0
+    },
+    "score_missing_rows": 0
+  },
+  "dataset_sha256": "818d604290cdae767f40a1bfcc2ca5634f1ba9ed1c31bfd41aa4b450943d973f",
+  "artifact": "models/artifacts/neuro_screen_logistic_regression_toddler_v1.0.0.joblib",
+  "created_at": "2026-09-17T07:24:31.058993+00:00",
+  "disclaimer": "Research/educational screening prototype. Dataset metrics do not represent clinical diagnostic accuracy. The Class label is a deterministic function of the Q-CHAT-10 score sum (score > 3), confirmed by direct audit -- not an independent clinical ground truth."
+}
