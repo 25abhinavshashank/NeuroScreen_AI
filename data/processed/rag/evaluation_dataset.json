@@ -1,0 +1,23 @@
+
+[
+  {
+    "query": "Do developmental screening tools provide a diagnosis?",
+    "relevant_sources": ["CDC_clinical_screening.pdf"],
+    "relevant_chunks": ["chunk_28"]
+  },
+  {
+    "query": "What is developmental screening?",
+    "relevant_sources": ["CDC_developmental_monitoring.pdf"],
+    "relevant_chunks": ["chunk_79"]
+  },
+  {
+    "query": "Why are developmental monitoring and screening important?",
+    "relevant_sources": ["CDC_developmental_monitoring.pdf"],
+    "relevant_chunks": ["chunk_86"]
+  },
+  {
+    "query": "How can parents contribute to developmental screening?",
+    "relevant_sources": ["CDC_clinical_screening.pdf"],
+    "relevant_chunks": ["chunk_25"]
+  }
+]
